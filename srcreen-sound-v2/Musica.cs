@@ -1,26 +1,17 @@
 ﻿class Musica //cria classe
 {
-    public string nome;
-    public string artista;
-    public int duracao;
-    private bool disponivel;
-
-    public void EscreveDisponivel(bool value)
-    {
-        disponivel = value;
-    }
-
-    public bool LeDisponivel()
-    {
-        return disponivel;
-    }
+    public string Nome { get; set; }  // criacao de propriedades
+    public string Artista { get; set; }
+    public int Duracao { get; set; }
+    public bool Disponivel { get; set; }
+    public string NomeCompleto { get; set; }
 
     public void ExibirFichaTecnica()
     {
-        Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Artista: {artista}");
-        Console.WriteLine($"Duração: {duracao}");
-        if (disponivel)
+        Console.WriteLine($"Nome: {Nome}");
+        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Duração: {Duracao}");
+        if (Disponivel)
         {
             Console.WriteLine("Disponivel no plano.");
         }
