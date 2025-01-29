@@ -1,10 +1,15 @@
 ﻿Musica musica1 = new Musica(); //criação de objeto
 musica1.nome = "Roxane";
 musica1.artista = "The Police";
-
-Console.WriteLine($"Nome da musica: {musica1.nome}");
-Console.WriteLine($"Nome da banda: {musica1.artista}");
+musica1.duracao = 273;
+musica1.EscreveDisponivel(true);
+//Console.WriteLine(musica1.disponivel);
 
 Musica musica2 = new Musica();
 musica2.nome = "Vertigo";
 musica2.artista = "U2";
+musica2.duracao = 367;
+musica2.EscreveDisponivel(true);
+
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
